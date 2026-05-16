@@ -1,0 +1,30 @@
+---
+import { Logo } from '../components/Logo.astro';
+---
+
+<section class="relative min-h-screen bg-[#0d0d0d] flex flex-col items-center justify-center px-6">
+  <header class="absolute top-0 w-full flex justify-between items-center p-6">
+    <Logo />
+    <nav class="space-x-4">
+      <a href="/demo" class="text-gray-300 hover:text-primary transition">Demo</a>
+      <a href="/pricing" class="text-gray-300 hover:text-primary transition">Pricing</a>
+      <a href="/roadmap" class="text-gray-300 hover:text-primary transition">Roadmap</a>
+    </nav>
+  </header>
+
+  <div class="max-w-3xl text-center">
+    <h1 class="text-5xl md:text-6xl font-bold text-white mb-6">
+      Modern Presentations <br class="hidden md:block" />
+      <span class="text-primary">in Your Browser</span>
+    </h1>
+    <p class="text-xl text-gray-300 mb-12">
+      ShowTime Lite is a cloud-based slide creation tool that lets you design stunning presentations
+      with real-time preview and export capabilities. No install required – just create, collaborate,
+      and share.
+    </p>
+    <div class="flex gap-4 justify-center">
+      <a href="/demo" class="px-6 py-3 bg-primary text-white rounded-lg font-semibold hover:bg-opacity-90 transition">Try Demo</a>
+      <a href="/pricing" class="px-6 py-3 border border-white text-white rounded-lg font-semibold hover:bg-white hover:text-black transition">View Pricing</a>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,21 @@
+---
+/**
+ * Static GIF preview for demo section.
+ * In production, replace `src` with optimized GIF path.
+ */
+const gifSrc = "/demo-preview.gif";
+---
+
+<div class="relative w-full max-w-4xl mx-auto">
+  <img
+    src={gifSrc}
+    alt="ShowTime Lite interactive demo preview"
+    class="w-full rounded-lg shadow-xl"
+  />
+  <a
+    href="/demo"
+    class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 opacity-0 hover:opacity-100 transition-opacity rounded-lg"
+  >
+    <span class="text-white text-2xl font-semibold">Launch Interactive Demo</span>
+  </a>
+</div>

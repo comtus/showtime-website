@@ -1,0 +1,21 @@
+{
+  "name": "showtime-website",
+  "version": "0.1.0",
+  "description": "Website for ShowTime Lite presentation tool",
+  "main": "index.js",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "lint": "astro lint"
+  },
+  "dependencies": {
+    "@astrojs/tailwind": "^4.0.0",
+    "astro": "^4.0.0",
+    "tailwindcss": "^3.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}
