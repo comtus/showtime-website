@@ -1,15 +1,15 @@
 ---
 /**
- * Static GIF preview for demo section.
- * In production, replace `src` with optimized GIF path.
+ * Static image preview for demo section.
+ * Uses st-lite_screenshot.jpg as demo image.
  */
-const gifSrc = "/demo-preview.gif";
+const demoSrc = "/st-lite_screenshot.jpg";
 ---
 
 <div class="relative w-full max-w-4xl mx-auto">
   <img
-    src={gifSrc}
-    alt="ShowTime Lite interactive demo preview"
+    src={demoSrc}
+    alt="ShowTime Lite interactive demo screenshot"
     class="w-full rounded-lg shadow-xl"
   />
   <a
