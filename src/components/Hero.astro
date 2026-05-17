@@ -3,13 +3,13 @@ import Logo from '../components/Logo.astro';
 ---
 
 <section class="relative min-h-screen bg-[#0d0d0d] flex flex-col items-center justify-center px-6">
-  <header class="absolute top-0 w-full flex flex-col items-center p-6">
+  <header class="absolute top-0 w-full flex items-center justify-center p-6">
     <Logo />
-    <div class="w-full flex justify-end mt-4"><nav class="space-x-4">
+    <nav class="absolute right-6 top-1/2 -translate-y-1/2 flex space-x-4">
       <a href="/demo" class="text-gray-300 hover:text-primary transition">Demo</a>
       <a href="/pricing" class="text-gray-300 hover:text-primary transition">Pricing</a>
       <a href="/roadmap" class="text-gray-300 hover:text-primary transition">Roadmap</a>
-    </nav></div>
+    </nav>
   </header>
 
   <div class="max-w-3xl text-center">
