@@ -4,28 +4,44 @@ import Logo from '../components/Logo.astro';
 ---
 
 <Layout>
-  <header class="flex justify-between items-center p-6">
-    <Logo />
+  <header class="sticky top-0 z-50 flex justify-between items-center border-b border-white/10 bg-dark/95 p-6 backdrop-blur">
+    <a href="/" aria-label="ShowTime Lite home">
+      <Logo />
+    </a>
     <nav class="space-x-4">
       <a href="/" class="text-gray-300 hover:text-primary transition">Home</a>
-      <a href="/pricing" class="text-gray-300 hover:text-primary transition">Pricing</a>
+      <a href="/#pricing" class="text-gray-300 hover:text-primary transition">Pricing</a>
     </nav>
   </header>
 
-  <section class="min-h-[70vh] flex flex-col items-center justify-center px-6 py-24">
+  <section class="flex flex-col items-center justify-center px-6 py-14">
     <h1 class="text-5xl font-bold text-white mb-8">Interactive Demo</h1>
     <p class="text-xl text-gray-300 mb-12 max-w-lg text-center">
       Explore ShowTime Lite’s live editor in your browser.
       Full‑screen sandbox – no account needed.
     </p>
 
-    <div class="w-full max-w-5xl rounded-lg border border-gray-700 overflow-hidden shadow-2xl">
+    <div class="w-full rounded-lg border border-gray-700 overflow-hidden shadow-2xl h-[700px]">
       <iframe
-        src="https://demo.showtime-lite.com"
-        class="w-full h-[600px]"
+        id="demoIframe"
+        src="https://showtime-lite.vercel.app/demo"
+        class="w-full h-full mx-auto block"
         sandbox="allow-scripts allow-same-origin allow-forms"
         title="ShowTime Lite Demo"
       />
+      <script>
+        const iframe = document.getElementById('demoIframe');
+        let resizeTimer;
+        window.addEventListener('resize', () => {
+          clearTimeout(resizeTimer);
+          resizeTimer = setTimeout(() => {
+            if (iframe) {
+              const src = iframe.getAttribute('src');
+              iframe.setAttribute('src', src);
+            }
+          }, 200);
+        });
+      </script>
     </div>
 
     <p class="mt-6 text-sm text-gray-500">

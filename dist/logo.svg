@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="40" fill="none">
+  <rect width="120" height="40" rx="8" fill="#0d0d0d"/>
+  <text x="60" y="26" fill="#00c2ff" font-size="20" text-anchor="middle" font-family="sans-serif">ShowTime</text>
+  <text x="60" y="48" fill="#f0f0f0" font-size="14" text-anchor="middle" font-family="sans-serif">Lite</text>
+</svg>
