@@ -19,30 +19,33 @@ import DemoPreview from '../components/DemoPreview.astro';
   <section id="roadmap" class="scroll-mt-20 bg-[#111] px-6 py-16">
     <div class="mx-auto grid max-w-6xl gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
       <div>
-        <h2 class="text-4xl font-bold text-white mb-4">Cloud-first today, desktop next</h2>
+        <h2 class="text-4xl font-bold text-white mb-4">Roadmap</h2>
         <p class="text-lg text-gray-300">
-          Create slides directly in the browser, export to PNG, PDF, or JSON, and follow the path toward offline editing and team workflows.
+          ShowTime Lite already supports local creation and cloud organization. The next milestones focus on offline use, collaboration, and smarter templates.
         </p>
       </div>
 
       <div class="grid gap-5 md:grid-cols-2">
         <div class="rounded-lg border border-gray-700 bg-dark p-6">
-          <h3 class="text-xl font-bold text-white mb-4">What’s here today</h3>
+          <h3 class="text-xl font-bold text-primary">Available today</h3>
+          <p class="mb-4 font-bold text-white">Editor and cloud workspace</p>
           <ul class="space-y-2 text-gray-300">
-            <li>Cloud-based slide editor</li>
-            <li>Dark and light themes</li>
-            <li>Export to PNG, PDF, JSON</li>
-            <li>Charts, diagrams, and code blocks</li>
-            <li>Presentation mode</li>
+            <li>Canvas editor</li>
+            <li>Rich components</li>
+            <li>Presentation and export</li>
+            <li>Cloud workspaces</li>
+            <li>Project tree</li>
+            <li>Folder organization</li>
           </ul>
         </div>
 
         <div class="rounded-lg border border-gray-700 bg-dark p-6">
-          <h3 class="text-xl font-bold text-white mb-4">Coming soon</h3>
+          <h3 class="text-xl font-bold text-primary">Later</h3>
+          <p class="mb-4 font-bold text-white">Upcoming milestones</p>
           <ul class="space-y-3 text-gray-300">
-            <li><span class="text-primary font-semibold">Q3 2026</span> Desktop app with offline support</li>
-            <li><span class="text-primary font-semibold">Q4 2026</span> Real-time collaboration</li>
-            <li><span class="text-primary font-semibold">2027</span> Custom themes and AI-powered templates</li>
+            <li><span class="font-bold text-primary">Q3 2026</span> Desktop app with offline support</li>
+            <li><span class="font-bold text-primary">Q4 2026</span> Real-time collaboration</li>
+            <li><span class="font-bold text-primary">2027</span> Custom themes and AI-powered templates</li>
           </ul>
         </div>
       </div>
@@ -54,45 +57,76 @@ import DemoPreview from '../components/DemoPreview.astro';
       <div class="mb-10 max-w-2xl">
         <h2 class="text-4xl font-bold text-white mb-4">Pricing and access</h2>
         <p class="text-lg text-gray-300">
-          Start with the free plan now. Pro and Enterprise access will open as collaboration and desktop features ship.
+          Build rich slides, diagrams, charts, and visual stories in the browser. Start locally for free, then upgrade for cloud project organization and feedback workflows.
         </p>
       </div>
 
-      <div class="grid gap-6 lg:grid-cols-3">
-        <div class="rounded-lg border border-primary/60 bg-[#111] p-6">
-          <h3 class="text-2xl font-bold text-white mb-2">Free</h3>
-          <p class="text-4xl font-bold text-primary mb-5">$0 <span class="text-base text-gray-400">/ month</span></p>
-          <ul class="mb-6 space-y-2 text-gray-300">
-            <li>Create and export slides</li>
-            <li>Basic templates</li>
-            <li>PNG and PDF export</li>
-            <li>Community support</li>
+      <div class="grid gap-6 lg:grid-cols-3 lg:items-stretch">
+        <div class="flex h-full flex-col rounded-lg border border-sky-500/40 bg-sky-950/20 p-6">
+          <div class="mb-5 flex items-start justify-between gap-4">
+            <div>
+              <div class="mb-3 flex h-11 w-11 items-center justify-center rounded-lg bg-sky-400/20 text-2xl text-sky-200">✦</div>
+              <h3 class="text-2xl font-bold text-white">Free</h3>
+              <p class="mt-1 text-sm font-bold uppercase tracking-wide text-sky-200">Local creation</p>
+            </div>
+            <p class="text-4xl font-bold text-primary">$0</p>
+          </div>
+          <p class="mb-4 text-sm text-gray-400">For trying ShowTime Lite and building browser-local decks.</p>
+          <ul class="mb-6 space-y-3 text-sm text-gray-300">
+            <li><span class="text-sky-200">✓</span> Guest workspace at /guest with browser-local save</li>
+            <li><span class="text-sky-200">✓</span> Canvas editor with drag-and-drop slide building</li>
+            <li><span class="text-sky-200">✓</span> Rich components: text, code, images, charts, diagrams, shapes, tables, maps, and timelines</li>
+            <li><span class="text-sky-200">✓</span> Multiple pages, presentation mode, dark and light themes</li>
+            <li><span class="text-sky-200">✓</span> Export presentations as images or JSON</li>
+            <li><span class="text-sky-200">✓</span> In-app features and usage guide</li>
           </ul>
-          <a href="https://showtime-lite.vercel.app/guest" target="_blank" rel="noopener noreferrer" class="inline-block w-full rounded-lg bg-primary px-5 py-3 text-center font-semibold text-white transition hover:bg-opacity-90">
-            Sign In / Start Free
+          <a href="https://showtime-lite.vercel.app/guest" target="_blank" rel="noopener noreferrer" class="mt-auto inline-block w-full rounded-lg bg-primary px-5 py-3 text-center font-bold text-dark transition hover:bg-opacity-90">
+            Start Free
           </a>
         </div>
 
-        <div class="rounded-lg border border-gray-700 bg-[#111] p-6">
-          <h3 class="text-2xl font-bold text-white mb-2">Pro</h3>
-          <p class="text-4xl font-bold text-gray-500 mb-5">Soon</p>
-          <ul class="mb-6 space-y-2 text-gray-500">
-            <li>Advanced themes and templates</li>
-            <li>Cloud storage and history</li>
-            <li>Priority support</li>
+        <div class="flex h-full flex-col rounded-lg border border-cyan-400/50 bg-cyan-950/25 p-6">
+          <div class="mb-5 flex items-start justify-between gap-4">
+            <div>
+              <div class="mb-3 flex h-11 w-11 items-center justify-center rounded-lg bg-cyan-400/20 text-2xl text-cyan-100">▣</div>
+              <h3 class="text-2xl font-bold text-white">Plus</h3>
+              <p class="mt-1 text-sm font-bold uppercase tracking-wide text-cyan-100">Cloud organization</p>
+            </div>
+            <p class="text-3xl font-bold text-cyan-100">Soon</p>
+          </div>
+          <p class="mb-4 text-sm text-gray-400">For signed-in users managing multiple cloud projects.</p>
+          <ul class="mb-6 space-y-3 text-sm text-gray-300">
+            <li><span class="text-cyan-100">✓</span> Account workspace at /app with Convex cloud sync</li>
+            <li><span class="text-cyan-100">✓</span> Multiple persistent cloud slide deck projects</li>
+            <li><span class="text-cyan-100">✓</span> Project tree with root folders, subfolders, projects, and slides</li>
+            <li><span class="text-cyan-100">✓</span> Nested folders up to three levels with clear validation</li>
+            <li><span class="text-cyan-100">✓</span> Tree and thumbnail views with clickable breadcrumbs</li>
+            <li><span class="text-cyan-100">✓</span> Rename, delete, and drag folders, projects, and slides</li>
+            <li><span class="text-cyan-100">✓</span> Limits of 50 projects and 50 slides per project</li>
           </ul>
-          <button disabled class="w-full rounded-lg bg-gray-800 px-5 py-3 font-semibold text-gray-500 cursor-not-allowed">Coming Soon</button>
+          <button disabled class="mt-auto w-full rounded-lg bg-cyan-200 px-5 py-3 font-bold text-dark opacity-50 cursor-not-allowed">Coming Soon</button>
         </div>
 
-        <div class="rounded-lg border border-gray-700 bg-[#111] p-6">
-          <h3 class="text-2xl font-bold text-white mb-2">Enterprise</h3>
-          <p class="text-4xl font-bold text-gray-500 mb-5">Soon</p>
-          <ul class="mb-6 space-y-2 text-gray-500">
-            <li>Team accounts</li>
-            <li>Real-time collaboration</li>
-            <li>Deployment and support options</li>
+        <div class="flex h-full flex-col rounded-lg border border-primary/70 bg-primary/15 p-6 shadow-[0_0_45px_rgba(0,168,204,0.08)]">
+          <div class="mb-5 flex items-start justify-between gap-4">
+            <div>
+              <div class="mb-3 flex h-11 w-11 items-center justify-center rounded-lg bg-primary/25 text-2xl text-primary">◆</div>
+              <h3 class="text-2xl font-bold text-white">Pro</h3>
+              <p class="mt-1 text-sm font-bold uppercase tracking-wide text-primary">Feedback workflow</p>
+            </div>
+            <p class="text-3xl font-bold text-primary">Soon</p>
+          </div>
+          <p class="mb-4 text-sm text-gray-400">For advanced cloud users who need persistence and feedback tracking.</p>
+          <ul class="mb-6 space-y-3 text-sm text-gray-300">
+            <li><span class="text-primary">✓</span> Everything in Plus</li>
+            <li><span class="text-primary">✓</span> Cloud tree persistence for structure, selection, view mode, names, and slide content</li>
+            <li><span class="text-primary">✓</span> Feedback submission from the Help menu for signed-in users</li>
+            <li><span class="text-primary">✓</span> Feedback saved in Convex and submitted to GitHub as issues</li>
+            <li><span class="text-primary">✓</span> Status tracking for pending, failed, open, and addressed feedback</li>
+            <li><span class="text-primary">✓</span> Five feedback entries for non-admin users</li>
+            <li><span class="text-primary">✓</span> Unlimited feedback for configured admin users</li>
           </ul>
-          <button disabled class="w-full rounded-lg bg-gray-800 px-5 py-3 font-semibold text-gray-500 cursor-not-allowed">Coming Soon</button>
+          <button disabled class="mt-auto w-full rounded-lg bg-primary px-5 py-3 font-bold text-dark opacity-50 cursor-not-allowed">Coming Soon</button>
         </div>
       </div>
     </div>
